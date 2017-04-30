@@ -113,24 +113,29 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="service-item">
                         <div class="service-header">
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span>CLEAN DESIGN</span>
+                            <span class="glyphicon glyphicon-user"></span>
+                            <span>ＭＹ　ＳＫＩＬＬ</span>
                         </div>
                         <div class="service-footer">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Molestiae, sapiente, saepe, velit,repellendus doloribus blanditiis
-                            repudiandae nobis optio quasi nulla aliquam nisi voluptatibus.
+                            1.	精通css、html、js基础<br />
+                            2.	了解常见浏览器的兼容性问题<br />
+                            3.	熟悉jquery、zepto、jquerymobile类库<br />
+                            4.	熟悉php和nodejs 两种后台语言<br />
+                            5.	熟悉angluarjs和vue两种前端框架<br />
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="service-item">
                         <div class="service-header">
-                            <span class="glyphicon glyphicon-user"></span>
-                            <span>CLEAN DESIGN</span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span>ＰＲＯＪＥＣＴ　１</span>
                         </div>
                         <div class="service-footer">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Molestiae, sapiente, saepe, velit,repellendus doloribus blanditiis
-                            repudiandae nobis optio quasi nulla aliquam nisi voluptatibus.
+                            1.  自己在网上扒的一个博客网站，然后用php 语言进行对后台功能的完善<br />
+                            2.	主要做的功能有：用户的登录验证，文章的分类，发表，评论，增删改查等等。<br />
+                            3.	技术ajax 、ci的MVC架构 、jquery<br />
+
                         </div>
                     </div>
                 </div>
@@ -138,11 +143,12 @@
                     <div class="service-item">
                         <div class="service-header">
                             <span class="glyphicon glyphicon-tint"></span>
-                            <span>CLEAN DESIGN</span>
+                            <span>ＰＲＯＪＥＣＴ　２</span>
                         </div>
                         <div class="service-footer">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Molestiae, sapiente, saepe, velit,repellendus doloribus blanditiis
-                            repudiandae nobis optio quasi nulla aliquam nisi voluptatibus.
+                            1.	 前台知识和后台php语言结合做了一个适配各种移动端的web APP<br />
+                            2.	 主要分两大模块，前端页面有四个主页面 首页 排行 歌单 我的.<br />
+                            3.	 数据来源是qq音乐的官方免费接口<br />
                         </div>
                     </div>
                 </div>
@@ -150,11 +156,11 @@
                     <div class="service-item">
                         <div class="service-header">
                             <span class="glyphicon glyphicon-apple"></span>
-                            <span>CLEAN DESIGN</span>
+                            <span>ＳＵＣＨ　ＭＥ</span>
                         </div>
                         <div class="service-footer">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Molestiae, sapiente, saepe, velit,repellendus doloribus blanditiis
-                            repudiandae nobis optio quasi nulla aliquam nisi voluptatibus.
+                            乐观开朗，严以律己，以诚待人，能够吃苦耐劳，具有团队合作精神，
+                            有进取心，对工作负责，适应能力强，热爱编程，逛技术论坛，喜欢运动，爱玩LOL
                         </div>
                     </div>
                 </div>
@@ -199,47 +205,54 @@
     </div>
     <div class="about">
         <div class="comm-title">
-            <span>ABOUT ME</span><br/>
+            <span>ABOUT THIS STATION</span><br/>
             <span class="title-bottom"></span>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <span class="about-title">Company Background</span>
+                    <span class="about-title">summarize experience</span>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Omnis, ex, amet,
-                        quisquam magni quasi modi sint accusamus architecto velit
-                        veritatis nobis autem repellat dolore quis atque totam laudantium ab sed
-                        impedit beatae esse error culpa voluptatem eius et.
-                        Aut, nulla, debitis voluptates doloribus quisquam
-                        maiores repudiandae nam culpa voluptatibus alias
-                        earum magnam numquam. Consectetur, ratione,
-                        ipsam totam et nesciunt atque temporibus fuga quos rem
-                        deserunt tempore dolore eaque dolorum a doloremque
-                        optio nihil pariatur aliquid ex id officiis aliquam sed.
+                        本站是基于bootstrap搭建的，总结下遇到的问题:首先从最上边的导航条开始，
+                        用的是bootstrap的栅格系统，66分，开始是让俩块里的内容一个左浮动，一个右浮动，
+                        但是屏幕宽度我调整为小于992的时候，它会呈现俩行布局，在下边的那块居中的问题上特别不好整
+                        ，我试着把父元素设display:inline-block让子元素text-aline:center但是神奇的一幕发生了，
+                        下边那行看不到了，但是f12点上去可以看到还占据着位置，给父元素设padding它会显示出来，
+                        但是元素撑开了，不行，然后我用定位translate50%让它居中，pc端可以，但是移动端废了，
+                        最后还是过来把浮动设为none，text-align，再加一个媒体查询解决，第二个坑是第二个导航栏，
+                        用bootstrap的组件做的，他的高度不够，所以我给组件加了高，但是内容不居中了，
+                        然后f12打开看它的高度是内容撑开的，然后用定位translate50%的方式做了下，同样出现移动端有很大的问题，
+                        再line-height也不好用，只能去算高度固定写死，感觉也不好，最后用给外边容器加padding的方式解决。
+                        轮播图也是用的组件，js里写移动端折叠导航菜单的时候点击里边的一个就关闭菜单的功能，
+                        我先是用了trigger函数，发现并不好使，毕竟是人家内置的东西，最后发现打开f12它那个是用一个class名控制的，
+                        我点击子菜单的事件结束处把那个class去掉，完美！！还有做点击菜单到相应高度的时候，
+                        遇到频繁获取滚动条的高度浪费性能，用了函数节流处理，获取高度的时候移动端和pc端的高度不同，
+                        只能用把前边元素累积高度求出来，还有移动端获取高度不能一上来就获取
+                        ，因为移动端折叠菜单那个地方空间释放，不占高度，得当点击子菜单的时候再去获取。
                     </p>
                 </div>
                 <div class="col-md-4">
                     <span class="about-title">MY SKILLS</span>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                            <span class="sr-only">40% Complete (success)</span>
+                    <div id="program-box">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                <span>php nodeJs</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                            <span class="sr-only">40% Complete (success)</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                <span>vue react</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                            <span class="sr-only">40% Complete (success)</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                <span>bootstrap requireJs seaJs</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                            <span class="sr-only">40% Complete (success)</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                <span>80% Html Css Js</span>
+                            </div>
                         </div>
                     </div>
                 </div>
