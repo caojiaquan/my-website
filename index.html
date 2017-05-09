@@ -1,273 +1,336 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
+<![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <title>website</title>
-    <!--<link rel="stylesheet" href="css/normalize.css"/>-->
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css"/>
-    <script src="js/rem.js"></script>
+    <title>myWebsite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="gogogo">
+    <meta charset="UTF-8">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index2.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/modernizr.js"></script>
 </head>
 <body>
-    <div class="home">
-        <div class="container">
-            <div class="row header-nav">
-                <div class="col-md-6 col-sm-6 col-xs-12 header-left">
-                    <span class="glyphicon glyphicon-earphone"> 15046658445</span>
-                    <span class="glyphicon glyphicon-envelope"> caojiaquan@vip.qq.com</span>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 header-right">
-                    <ul class="home-right">
-                        <li><a class="glyphicon glyphicon-plane" href="https://user.qzone.qq.com/2587820504/infocenter?ptsig=alwmsKVMv3ll2ROijt8Hq2rROvGhZrAGlGfgWZY1rKg_"></a></li>
-                        <li><a class="glyphicon glyphicon-heart" href="" ></a></li>
-                        <li><a class="glyphicon glyphicon-music" href=""></a></li>
-                        <li><a class="glyphicon glyphicon-camera" href=""></a></li>
-                    </ul>
+    <!-- 头部开始-->
+    <div id="home">
+        <div class="site-header">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="left-header">
+                                <span><i class="fa fa-phone"></i>15046658445</span>
+                                <span><i class="fa fa-envelope"></i>2587820504@qq.com</span>
+                            </div> <!-- /.left-header -->
+                        </div> <!-- /.col-md-6 -->
+                        <div class="col-md-6 col-sm-6">
+                            <div class="right-header text-right">
+                                <ul class="social-icons">
+                                    <li><a href="#" class="fa fa-qq" ></a></li>
+                                    <li><a href="#" class="fa fa-weibo"></a></li>
+                                    <li><a href="#" class="fa fa-weixin"></a></li>
+                                    <li><a href="#" class="fa fa-github-square"></a></li>
+                                </ul>
+                            </div> <!-- /.left-header -->
+                        </div> <!-- /.col-md-6 -->
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
+            </div> <!-- /.top-header -->
+            <div class="main-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <div class="logo">
+                                <h1><a href="#" title="Dreri">coding</a></h1>
+                            </div> <!-- /.logo -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-8 col-sm-8 col-xs-6">
+                            <div class="menu text-right hidden-sm hidden-xs">
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#skill">Skills</a></li>
+                                    <li><a href="#portfolio">Best of us</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div> <!-- /.menu -->
+                        </div> <!-- /.col-md-8 -->
+                    </div> <!-- /.row -->
+                    <div class="responsive-menu text-right visible-xs visible-sm">
+                        <a href="#" class="toggle-menu fa fa-bars"></a>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#skill">Skills</a></li>
+                                <li><a href="#portfolio">photo</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="main-nav">
-        <nav class="navbar navbar-default  main-box">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">WEB</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li  class="selected"><a href="javascript:void(0);">HOME</a></li>
-                        <li><a href="javascript:void(0);">INTRODUCE</a></li>
-                        <li><a href="javascript:void(0);">US</a></li>
-                        <li><a href="javascript:void(0);">ABOUT</a></li>
-                        <li><a href="javascript:void(0);">CONTACT</a></li>
-                        <li><a href="javascript:void(0);">EXTERNAL</a></li>
-
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-    </div>
+    <!-- 轮播图-->
     <div class="flexslider">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="image/banner2.jpg" alt="...">
-                    <div class="carousel-caption">
-                        ...
-                    </div>
+        <ul class="slides">
+            <li>
+                <img src="images/banner01.jpeg" alt="">
+                <div class="flex-caption">
+                    <h2>pc</h2>
+                    <p> Like the Internet, love programming<br></p>
                 </div>
-                <div class="item">
-                    <img src="image/banner1.jpg" alt="...">
-                    <div class="carousel-caption">
-                        ...
-
-                    </div>
+            </li>
+            <li>
+                <img src="images/banner02.jpg" alt="">
+                <div class="flex-caption">
+                    <h2>Responsive Mobile</h2>
+                    <p>Love the sun , love life</p>
                 </div>
-                <div class="item">
-                    <img src="image/banner3.jpg" alt="...">
-                    <div class="carousel-caption">
-                        ...
-                    </div>
-                </div>
-                ...
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+            </li>
+        </ul>
     </div>
-    <div id="work">
-        <div class="comm-title">
-            <span>ＩＮＴＲＯＤＵＣＥ</span><br/>
-            <span class="title-bottom"></span>
-        </div>
+    <!--技能板块-->
+    <div id="skill" class="section-cotent">
         <div class="container">
+            <div class="title-section text-center">
+                <h2>My Skill</h2>
+                <span></span>
+            </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="service-item">
                         <div class="service-header">
-                            <span class="glyphicon glyphicon-user"></span>
-                            <span>ＭＹ　ＳＫＩＬＬ</span>
+                            <i class="fa fa-heart"></i>
+                            <h3>技能描述</h3>
                         </div>
-                        <div class="service-footer">
-                            1.	精通css、html、js基础<br />
-                            2.	了解常见浏览器的兼容性问题<br />
-                            3.	熟悉jquery、zepto、jquerymobile类库<br />
-                            4.	熟悉php和nodejs 两种后台语言<br />
-                            5.	熟悉angluarjs和vue两种前端框架<br />
+                        <div class="service-description">
+                            1、掌握html、css、js、基础<br />
+                            2、熟悉ajax、jsonp原理<br />
+                            3、了解commonJs和require模块化思想并封装过组件<br />
+                            4、熟悉jquery、zepto类库<br />
+                            5、熟悉vue、react框架<br />
+                            6、熟悉php和nodeJs<br />
+                            7、熟悉Mysql数据库<br />
+                            8、了解angluarJs<br />
                         </div>
-                    </div>
-                </div>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+
                 <div class="col-md-3 col-sm-6">
                     <div class="service-item">
                         <div class="service-header">
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span>ＰＲＯＪＥＣＴ　１</span>
+                            <i class="fa fa-umbrella"></i>
+                            <h1>实战第一步</h1>
                         </div>
-                        <div class="service-footer">
-                            1.  自己在网上扒的一个博客网站，然后用php 语言进行对后台功能的完善<br />
-                            2.	主要做的功能有：用户的登录验证，文章的分类，发表，评论，增删改查等等。<br />
-                            3.	技术ajax 、ci的MVC架构 、jquery<br />
+                        <div class="service-description">
+                            熟悉ajax、jsonp技术，熟悉常见的跨域跨域问题，并且进行了实战，自己做的一个音乐播放器，
+                            前端主要有4个页面：首页，排行，歌单，我的，数据是通过php语言向QQ音乐官方免费接口请求
+                            的。
+                        </div>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <div class="service-header">
+                            <i class="fa fa-desktop"></i>
+                            <h3>实战第二步</h3>
+                        </div>
+                        <div class="service-description">
+
+                            自己在网上扒的一个博客系统，用它进行了后台功能的完善，主要功能有：用户登录验证、文章的发表、评论、点赞、文章分类等、用到的
+                            技术主要就是ajax不刷新页面验证用户登录、其他功能是通过Ci的MVC架构来实现
 
                         </div>
                     </div>
-                </div>
+
+            </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="service-item">
                         <div class="service-header">
-                            <span class="glyphicon glyphicon-tint"></span>
-                            <span>ＰＲＯＪＥＣＴ　２</span>
+                            <i class="fa fa-cogs"></i>
+                            <h3>实战第三步</h3>
                         </div>
-                        <div class="service-footer">
-                            1.	 前台知识和后台php语言结合做了一个适配各种移动端的web APP<br />
-                            2.	 主要分两大模块，前端页面有四个主页面 首页 排行 歌单 我的.<br />
-                            3.	 数据来源是qq音乐的官方免费接口<br />
+                        <div class="service-description">
+                            第三步当然是本站的开发了，哈哈，本站主要是出于对bootstrap的好奇，所以才拿来练习的，作品不多就拿来充数了，其他作品还
+                            在锅里呢，马上熟。。插段广告吧：最近在做一个购物网站，用面向对象的方式开发，貌似好高大上的样子，尽请期待。。。
+                        </div>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 --><!-- /.row -->
+        </div> <!-- /.container -->
+    </div>
+</div>
+    <div id="portfolio" class="section-content">
+        <div class="container">
+            <div class="title-section text-center">
+                <h2>BEST OF US</h2>
+                <span></span>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/portfolio/1.jpg" alt="">
+                        <div class="overlay">
+                            <div class="inner">
+                                <h4><a data-rel="lightbox" href="images/portfolio/1.jpg">花海</a></h4>
+                                <span>2015</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div> <!-- /.col-md-3 -->
                 <div class="col-md-3 col-sm-6">
-                    <div class="service-item">
-                        <div class="service-header">
-                            <span class="glyphicon glyphicon-apple"></span>
-                            <span>ＳＵＣＨ　ＭＥ</span>
-                        </div>
-                        <div class="service-footer">
-                            乐观开朗，严以律己，以诚待人，能够吃苦耐劳，具有团队合作精神，
-                            有进取心，对工作负责，适应能力强，热爱编程，逛技术论坛，喜欢运动，爱玩LOL
+                    <div class="portfolio-thumb">
+                        <img src="images/portfolio/2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="inner">
+                                <h4><a data-rel="lightbox" href="images/portfolio/2.jpg">太白山</a></h4>
+                                <span>2015</span>
+                            </div>
+                        </div> <!-- /.overlay -->
+                    </div> <!-- /.portfolio-thumb -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/portfolio/3.jpg" alt="Portfolio Item 3">
+                        <div class="overlay">
+                            <div class="inner">
+                                <h4><a data-rel="lightbox" href="images/portfolio/3.jpg">云龙湖</a></h4>
+                                <span>2015</span>
+                            </div>
+                        </div> <!-- /.overlay -->
+                    </div> <!-- /.portfolio-thumb -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/portfolio/4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="inner">
+                                <h4><a data-rel="lightbox" href="images/portfolio/4.jpg">雁荡山</a></h4>
+                                <span>2016</span>
+                            </div>
+                        </div> <!-- /.overlay -->
+                    </div> <!-- /.portfolio-thumb -->
+                </div> <!-- /.col-md-3 -->
+            </div> <!-- /.row -->
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/portfolio/5.jpg" alt="">
+                        <div class="overlay">
+                            <div class="inner">
+                                <h4><a data-rel="lightbox" href="images/portfolio/5.jpg">云龙湖</a></h4>
+                                <span>2014</span>
+                            </div>
+                        </div> <!-- /.overlay -->
+                    </div> <!-- /.portfolio-thumb -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/portfolio/6.jpg" alt="">
+                        <div class="overlay">
+                            <div class="inner">
+                                <h4><a data-rel="lightbox" href="images/portfolio/6.jpg">连云港</a></h4>
+                                <span>2015</span>
+                            </div>
+                        </div> <!-- /.overlay -->
+                    </div> <!-- /.portfolio-thumb -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/portfolio/7.jpg" alt="">
+                        <div class="overlay">
+                            <div class="inner">
+                                <h4><a data-rel="lightbox" href="images/portfolio/7.jpg">宜兴</a></h4>
+                                <span>2016</span>
+                            </div>
+                        </div> <!-- /.overlay -->
+                    </div> <!-- /.portfolio-thumb -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-thumb">
+                        <img src="images/portfolio/8.jpg" alt="">
+                        <div class="overlay">
+                            <div class="inner">
+                                <h4><a data-rel="lightbox" href="images/portfolio/8.jpg">汕头</a></h4>
+                                <span>2016</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="photoWall">
-        <div class="comm-title">
-            <span>THE BEST OF US</span><br/>
-            <span class="title-bottom"></span>
-        </div>
+    <div id="about" class="section-cotent">
         <div class="container">
-            <div class="row photo-row">
-                <div class="col-md-3 col-sm-6 photo-item">
-                    <img src="image/portfolio/item1.jpg" alt=""/>
-                </div>
-                <div class="col-md-3 col-sm-6 photo-item">
-                    <img src="image/portfolio/item2.jpg" alt=""/>
-                </div>
-                <div class="col-md-3 col-sm-6 photo-item">
-                    <img src="image/portfolio/item3.jpg" alt=""/>
-                </div>
-                <div class="col-md-3 col-sm-6 photo-item">
-                    <img src="image/portfolio/item4.jpg" alt=""/>
-                </div>
-            </div>
-            <div class="row photo-row">
-                <div class="col-md-3 col-sm-6 photo-item">
-                    <img src="image/portfolio/item5.jpg" alt=""/>
-                </div>
-                <div class="col-md-3 col-sm-6 photo-item">
-                    <img src="image/portfolio/item6.jpg" alt=""/>
-                </div>
-                <div class="col-md-3 col-sm-6 photo-item">
-                    <img src="image/portfolio/item7.jpg" alt=""/>
-                </div>
-                <div class="col-md-3 col-sm-6 photo-item">
-                    <img src="image/portfolio/item8.jpg" alt=""/>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="about">
-        <div class="comm-title">
-            <span>ABOUT THIS STATION</span><br/>
-            <span class="title-bottom"></span>
-        </div>
-        <div class="container">
+            <div class="title-section text-center">
+                <h2>about</h2>
+                <span></span>
+            </div> <!-- /.title-section -->
             <div class="row">
                 <div class="col-md-8">
-                    <span class="about-title">summarize experience</span>
-                    <p>
-                        本站是基于bootstrap搭建的，总结下遇到的问题:首先从最上边的导航条开始，
-                        用的是bootstrap的栅格系统，66分，开始是让俩块里的内容一个左浮动，一个右浮动，
-                        但是屏幕宽度我调整为小于992的时候，它会呈现俩行布局，在下边的那块居中的问题上特别不好整
-                        ，我试着把父元素设display:inline-block让子元素text-aline:center但是神奇的一幕发生了，
-                        下边那行看不到了，但是f12点上去可以看到还占据着位置，给父元素设padding它会显示出来，
-                        但是元素撑开了，不行，然后我用定位translate50%让它居中，pc端可以，但是移动端废了，
-                        最后还是过来把浮动设为none，text-align，再加一个媒体查询解决，第二个坑是第二个导航栏，
-                        用bootstrap的组件做的，他的高度不够，所以我给组件加了高，但是内容不居中了，
-                        然后f12打开看它的高度是内容撑开的，然后用定位translate50%的方式做了下，同样出现移动端有很大的问题，
-                        再line-height也不好用，只能去算高度固定写死，感觉也不好，最后用给外边容器加padding的方式解决。
-                        轮播图也是用的组件，js里写移动端折叠导航菜单的时候点击里边的一个就关闭菜单的功能，
-                        我先是用了trigger函数，发现并不好使，毕竟是人家内置的东西，最后发现打开f12它那个是用一个class名控制的，
-                        我点击子菜单的事件结束处把那个class去掉，完美！！还有做点击菜单到相应高度的时候，
-                        遇到频繁获取滚动条的高度浪费性能，用了函数节流处理，获取高度的时候移动端和pc端的高度不同，
-                        只能用把前边元素累积高度求出来，还有移动端获取高度不能一上来就获取
-                        ，因为移动端折叠菜单那个地方空间释放，不占高度，得当点击子菜单的时候再去获取。
-                    </p>
-                </div>
-                <div class="col-md-4">
-                            <span class="about-title">MY SKILLS</span>
-                            <div id="program-box">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                <span>php nodeJs</span>
+                    <h4 class="widget-title">本站小结</h4>
+                    <p>本站是基于bootstrap搭建的，总结下遇到的问题:首先从最上边的导航条开始， 用的是bootstrap的栅格系统，66分，开始是让俩块里的内容一个左浮动，一个右浮动， 但是屏幕宽度我调整为小于992的时候，它会呈现俩行布局，在下边的那块居中的问题上特别不好整 ，我试着把父元素设display:inline-block让子元素text-aline:center但是神奇的一幕发生了， 下边那行看不到了，但是f12点上去可以看到还占据着位置，给父元素设padding它会显示出来， 但是元素撑开了，不行，然后我用定位translate50%让它居中，pc端可以，但是移动端废了， 最后还是过来把浮动设为none，text-align，再加一个媒体查询解决，第二个坑是第二个导航栏， 用bootstrap的组件做的，他的高度不够，所以我给组件加了高，但是内容不居中了， 然后f12打开看它的高度是内容撑开的，然后用定位translate50%的方式做了下，同样出现移动端有很大的问题， 再line-height也不好用，只能去算高度固定写死，感觉也不好，最后用给外边容器加padding的方式解决。 轮播图也是用的组件，js里写移动端折叠导航菜单的时候点击里边的一个就关闭菜单的功能， 我先是用了trigger函数，发现并不好使，毕竟是人家内置的东西，最后发现打开f12它那个是用一个class名控制的， 我点击子菜单的事件结束处把那个class去掉，完美！！还有做点击菜单到相应高度的时候， 遇到频繁获取滚动条的高度浪费性能，用了函数节流处理，获取高度的时候移动端和pc端的高度不同， 只能用把前边元素累积高度求出来，还有移动端获取高度不能一上来就获取 ，因为移动端折叠菜单那个地方空间释放，不占高度，得当点击子菜单的时候再去获取。</p>
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-4 our-skills">
+                    <h4 class="widget-title">技能掌握情况</h4>
+                    <ul class="progess-bars">
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">HTML CSS JS </div>
                             </div>
-                        </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">php </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">nodeJs </div>
+                            </div>
+                        </li>
+                        <li>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                <span>vue react</span>
-                            </div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">jquery </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                <span>bootstrap requireJs seaJs</span>
+                    </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">vue react</div>
                             </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span>80% Html Css Js</span>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">requireJs commonJs</div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        </li>
+                    </ul>
+                </div> <!-- /.col-md-3 -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
     </div>
     <div id="contact">
-        <div class="comm-title">
-            <span>CONTACT ME</span><br/>
-            <span class="title-bottom"></span>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <h4>Send a message to us</h4>
+
+            <div class="container">
+                <div class="title-section text-center">
+                    <h2>CONTACT</h2>
+                    <span></span>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <h4>Send a message to us</h4>
                         <p>
                             <label for="name">你的姓名：</label><br/>
                             <input type="text" id="name"/>
@@ -278,34 +341,46 @@
                         </p>
                         <p>
                             <label for="message">内容：</label><br/>
-                            <textarea name="" id="message" cols="30" rows="10"></textarea><br/>
+                            <textarea name="" id="message" cols="20" rows="10" style="height: 100px;"></textarea><br/>
                             <span class="label label-danger">发送</span>
                         </p>
-                </div>
-                <div class="col-md-5 pay-box">
-                    <h4>扫码打赏</h4>
-                    <div class="pay-money">
-                        <img src="image/weixin2.jpg.png" alt=""/>
-                        <span>打赏5元</span>
                     </div>
-                    <div class="pay-money">
-                        <img src="image/weixin2.jpg.png" alt=""/>
-                        <span>打赏10元</span>
+                    <div class="col-md-5 pay-box">
+                        <h4>扫码打赏</h4>
+                        <div class="pay-money">
+                            <img src="images/weixin2.jpg" alt=""/>
+                            <span>打赏5元</span>
+                        </div>
+                        <div class="pay-money">
+                            <img src="images/weixin2.jpg" alt=""/>
+                            <span>打赏10元</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="footer">
+    <div class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">Copyright © 2018 Dong Lin</div>
-                <div class="col-md-6">BACK TO TOP</div>
-            </div>
-        </div>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <p>Copyright *  caojiaquan</p>
+                </div> <!-- /.col-md-6 -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="go-top">
+                        <a href="#" id="go-top">
+                            <i class="fa fa-angle-up"></i>
+                            Back to Top
+                        </a>
+                    </div>
+                </div> <!-- /.col-md-6 -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.lightbox.js"></script>
+    <script src="js/custom.js"></script>
+
+
 </body>
 </html>
